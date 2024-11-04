@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Ukor - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tech-icons i:hover {
+            transform: scale(1.2);
+        }
+        /* Additional styling for image */
+        
+        .intro-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 50%;
+            border: 3px solid rgba(172, 48, 233, 0.5);
+            /* Light border color */
+            box-shadow: 0 0 10px rgba(172, 48, 233, 0.6), 0 0 20px rgba(172, 48, 233, 0.4), 0 0 30px rgba(172, 48, 233, 0.2);
+            animation: pulseGlow 2s infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 10px rgba(172, 48, 233, 0.6), 0 0 20px rgba(172, 48, 233, 0.4), 0 0 30px rgba(172, 48, 233, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(172, 48, 233, 0.7), 0 0 40px rgba(172, 48, 233, 0.5), 0 0 60px rgba(172, 48, 233, 0.3);
+            }
+        }
+        /* Light/Dark Mode Toggle */
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 24px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 2px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+        
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+        /* Auto-typing effect */
+        
+        .typing-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #00D084;
+            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="dark-menu header">
+        <a href="#" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+            <i class="fas fa-shield-alt" style="color: #00D084; margin-right: 8px; font-size: 24px;"></i>
+            <span class="grey-color">&lt;</span>
+            <span class="logo-name" id="logoName" style="color: #ac30e9; font-weight: bold; font-size: 24px; text-shadow: 0px 0px 5px rgba(172, 48, 233, 0.7);">Vincent Ukor</span>
+            <span class="grey-color">/&gt;</span>
+        </a>
+
+        <ul class="dark-menu menu">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </ul>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Hi, I'm Vincent <span class="typing-text">| Cybersecurity Expert</span> 👋</h2>
+            <p>Cybersecurity Analyst | Cybersecurity Engineer | Systems Analyst<br> Dedicated and seasoned cybersecurity professional with over 8 years of experience in system analysis, software quality assurance, and end-user support within clinical settings.
+                Proven ability in improving information systems, enhancing system functionalities, and delivering robust security testing solutions. Skilled at leveraging SIEM tools, cloud technologies, scripting, and automation to strengthen cybersecurity
+                posture. Known for strong problem-solving, critical thinking, and exceptional communication abilities that drive efficient technology implementations and user adoption.</p>
+            <div class="buttons">
+                <button onclick="window.location.href='mailto:ukor.vincent663@gmail.com'">Contact Me</button>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/your-github"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30"></a>
+                <a href="https://www.linkedin.com/in/vincent-ukor/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30"></a>
+                <a href="mailto:ukor.vincent663@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="30"></a>
+            </div>
+        </div>
+        <div class="intro-image">
+            <img src="profile.jfif" alt="Vincent Ukor">
+        </div>
+    </section>
+    <section class="skills-main-div" id="skills">
+        <div class="skills-illustration">
+            <img src="image.jfif" alt="Illustration of a person working on a laptop" style="max-width: 100%; height: auto; max-height: 400px;">
+        </div>
+        <div class="skills-text">
+            <h2>Skills</h2>
+            <div class="tech-icons">
+                <div style="text-align: center; margin: 10px;">
+                    <i class="fas fa-shield-alt" title="Security Tools" style="font-size: 40px; color: #4285F4;"></i>
+                    <p style="font-size: 16px; font-weight: bold; color: #4285F4;">Security Tools</p>
+                    <ul>
+                        <li>SIEM, Splunk, QRadar, Wazuh</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin: 10px;">
+                    <i class="fas fa-clipboard-check" title="Frameworks" style="font-size: 40px; color: #FFC107;"></i>
+                    <p style="font-size: 16px; font-weight: bold; color: #FFC107;">Frameworks</p>
+                    <ul>
+                        <li>HIPAA, NIST, PCI-DSS, ISO/IEC 27001</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin: 10px;">
+                    <i class="fas fa-code" title="Scripting & Automation" style="font-size: 40px; color: #00D084;"></i>
+                    <p style="font-size: 16px; font-weight: bold; color: #00D084;">Scripting & Automation</p>
+                    <ul>
+                        <li>SQL, Python, JavaScript, Selenium</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin: 10px;">
+                    <i class="fas fa-server" title="System Administration" style="font-size: 40px; color: #7F8C8D;"></i>
+                    <p style="font-size: 16px; font-weight: bold; color: #7F8C8D;">System Administration</p>
+                    <ul>
+                        <li>Windows, Linux, MDM, VMware, Hyper-V, Citrix, Active Directory, LDAP</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin: 10px;">
+                    <i class="fas fa-project-diagram" title="Project Management" style="font-size: 40px; color: #8E44AD;"></i>
+                    <p style="font-size: 16px; font-weight: bold; color: #8E44AD;">Project Management</p>
+                    <ul>
+                        <li>Agile-Scrum, Waterfall, Six Sigma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-cards-container">
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <img src="hospital.png" alt="Texas Children's Hospital Logo" class="experience-logo">
+                    <h5 class="experience-company">Texas Children's Hospital, Houston, TX</h5>
+                </div>
+                <div class="experience-text-details">
+                    <h5 class="experience-role">Systems Analyst</h5>
+                    <p class="experience-date">June 2022 - Present</p>
+                    <ul>
+                        <li>Improved team productivity by implementing a new project management tool, reducing project time by 30%.</li>
+                        <li>Streamlined customer service, resulting in a 20% decrease in response time and a 15% increase in satisfaction scores.</li>
+                        <li>Automated testing with Selenium-Java, increasing test coverage and efficiency.</li>
+                        <li>Implemented secure SSO and MFA, enhancing access control and user productivity.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-header">
+                    <img src="eplus.png" alt="ePlus Logo" class="experience-logo">
+                    <h5 class="experience-company">ePlus Inc, Houston, TX</h5>
+                </div>
+                <div class="experience-text-details">
+                    <h5 class="experience-role">Technical Analyst</h5>
+                    <p class="experience-date">Sep 2019 - June 2022</p>
+                    <ul>
+                        <li>Maintained a 95% client satisfaction rating through effective troubleshooting.</li>
+                        <li>Supported 8 major software upgrades, enhancing system performance by 15%.</li>
+                        <li>Reduced hardware and software maintenance time by 20% with streamlined procedures.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Reduced Incident Response Time</h3>
+                <p><strong>Stack:</strong> Splunk, Microsoft Defender, Suricata</p>
+                <p>Utilized SIEM solution to aggregate and analyze data, significantly reducing incident response time and enabling quick malware remediation.</p>
+            </div>
+            <div class="project-card">
+                <h3>Analyze Network Traffic with TCPDump</h3>
+                <p><strong>Stack:</strong> TCPDump</p>
+                <p>Used the Linux utility TCPDump to capture and analyze TCP traffic, enhancing network visibility and monitoring capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-section" id="education">
+        <h2>Education</h2>
+        <div class="education-card-container">
+            <div class="education-card">
+                <div class="education-card-left">
+                    <img class="education-roundedimg" src="edu.jfif" alt="Auchi Polytechnic Logo">
+                </div>
+                <div class="education-card-right">
+                    <h5 class="education-text-school">Auchi Polytechnic, Auchi</h5>
+                    <p class="education-text-subHeader">Higher National Diploma in Computer Science</p>
+                    <p class="education-text-duration">2008 – 2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications-section" id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification-card">
+            <i class="fas fa-certificate"></i>
+            <p style="color: #00D084;">CompTIA Security+</p>
+        </div>
+        <div class="certification-card">
+            <i class="fas fa-certificate"></i>
+            <p style="color: #2196F3;">CompTIA CySA+</p>
+        </div>
+        <div class="certification-card">
+            <i class="fas fa-certificate"></i>
+            <p style="color: #ac30e9;">CompTIA A+</p>
+        </div>
+        <div class="certification-card">
+            <i class="fas fa-certificate"></i>
+            <p style="color: #FFC107;">Cisco Certified CCNA</p>
+        </div>
+        <div class="certification-card">
+            <i class="fas fa-certificate"></i>
+            <p style="color: aquamarine;">Google Cybersecurity Professional Certificate</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me <span class="emoji">☎️</span></h2>
+        <p>I am currently open to Cybersecurity roles. Please feel free to reach out!</p>
+        <div class="contact-info">
+            <p>Phone: <a href="tel:+1-281-771-7995">+1 (281) 771-7995</a></p>
+            <p>Email: <a href="mailto:ukor.vincent663@gmail.com">ukor.vincent663@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/vincent-ukor" target="_blank">Vincent Ukor</a></p>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
